@@ -97,7 +97,7 @@ class TasksController extends Controller
         // バリデーション
         $request->validate([
             'content' => 'required|max:255',
-            'status' => 'required|max:255',
+            'status' => 'required|max:10',
         ]);
         
         // 認証済みユーザ（閲覧者）の投稿として作成（リクエストされた値をもとに作成）
